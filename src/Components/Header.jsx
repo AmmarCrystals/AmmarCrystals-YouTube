@@ -7,14 +7,14 @@ const Header = () => {
 
     const dispatch = useDispatch()
 
-    const toggleMenuHandler = () => {   
+    const toggleMenuHandler = () => {
         dispatch(toggleMenu());
     }
 
     return (
-        <div className='grid grid-flow-col justify-items-center shadow md h-22 '>
+        <div className='grid grid-flow-col col-span-12 justify-items-center shadow md h-22 '>
             <div className='flex col-span-1 items-center  space-x-4 -mx-8'>
-                <img onClick={()=>toggleMenuHandler()} className='w-10' src="https://cdn1.iconfinder.com/data/icons/systemui-vol-2/21/menu_hamburger-1024.png" alt="menu" />
+                <img onClick={() => toggleMenuHandler()} className='w-10' src="https://cdn1.iconfinder.com/data/icons/systemui-vol-2/21/menu_hamburger-1024.png" alt="menu" />
                 <img className='w-26' src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Youtube2_colored_svg-1024.png" alt="YTLogo" /></div>
             <div className='col-span-10 flex items-center justify-center'>
                 <input type="text" placeholder='Search' className='border border-gray-300 rounded-full px-4 py-2 w-96' />
